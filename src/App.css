@@ -3,7 +3,7 @@
 }
 
 body {
-  background: rgb(41, 33, 33);
+  background: whitesmoke;
 }
 
 ul {
@@ -88,4 +88,22 @@ li a {
   outline: none;
   border: none;
   padding: 0.7em;
+}
+
+.tic-tac-toe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tic-tac-toe-square {
+  background-color: azure;
+  height: 100px;
+  width: 100px;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.board-row {
+  display: flex;
 }
