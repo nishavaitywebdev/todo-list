@@ -3,11 +3,12 @@ import { useEffect, useState } from 'react';
 
 function ToDoList() {
 
-    const storedItems = JSON.parse(localStorage.getItem('todos'));
-    const [data, setData] = useState([...storedItems]);
+    // const storedItems = JSON.parse(localStorage.getItem('todos'));
+    // const [data, setData] = useState([...storedItems]);
+    const [data, setData] = useState([]);
 
     useEffect(() => {
-        localStorage.setItem('todos', JSON.stringify(data));
+        // localStorage.setItem('todos', JSON.stringify(data));
         const completedCount = data.filter(task => task.completed).length;
         setCompletedCount(completedCount);
     }, [data]);

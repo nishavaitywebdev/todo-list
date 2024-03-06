@@ -14,6 +14,9 @@ const Layout = () => {
           <li>
             <Link to="/todo">Todo</Link>
           </li>
+          <li>
+            <Link to="/tictactoe">TicTacToe</Link>
+          </li>
         </ul>
       </nav>
 
